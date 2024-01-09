@@ -1,48 +1,40 @@
 ![Binarytree](https://image.noelshack.com/fichiers/2024/02/1/1704711654-dall-e-2024-01-08-12-00-13-a-vintage-style-photograph-featuring-an-old-fashioned-computer-on-a-wooden-desk-the-computer-screen-displays-a-binary-tree-data-structure-with-clear.jpg)
-
 # Binary Tree Manipulation Project in C
 
-This project provides a comprehensive set of functionalities for manipulating binary trees in the C programming language. Binary trees are fundamental data structures used to organize and structure data hierarchically.
+## Project Overview
 
-## Overview
-
-The Binary Tree Manipulation Project aims to facilitate various operations on binary trees, offering a wide range of functionalities for creating, modifying, and analyzing binary tree structures. Whether you need to build, traverse, or analyze binary trees, this project has got you covered.
+The Binary Tree Manipulation Project in C is a comprehensive exploration and implementation of binary trees, one of the most fundamental data structures in computer science. This project covers various aspects of binary tree manipulation, including creation, traversal, measurement, and analysis. It is designed to provide a deep understanding of how binary trees work and how they can be utilized in C programming.
 
 ## Features
 
-- **Binary Tree Creation:** Easily create a binary tree and visualize its structure.
-- **Node Insertion:** Insert nodes as left or right children of existing nodes.
-- **Tree Deletion:** Safely delete an entire binary tree when it's no longer needed.
-- **Node Validation:** Check if a node is a leaf or the root of the tree.
-- **Tree Traversal:** Perform pre-order, in-order, and post-order traversals and display node values.
-- **Tree Metrics:** Measure the height, depth, and size of a binary tree.
-- **Node Counting:** Count the number of leaf nodes and nodes with at least one child.
-- **Balance Factor:** Calculate the balance factor to determine the tree's balance.
-- **Tree Completeness:** Verify if a binary tree is complete.
+- **Creation and Insertion**: Functions to create a binary tree and insert nodes as left or right children.
+- **Deletion**: Safely delete an entire binary tree to prevent memory leaks.
+- **Node Validation**: Check if a node is a leaf or the root, enhancing tree analysis capabilities.
+- **Traversal Techniques**: Implementations of pre-order, in-order, and post-order traversals for tree exploration.
+- **Tree Metrics**: Calculate the height, depth, and size of a tree, providing insights into its structure.
+- **Node Counting**: Count the number of leaves and nodes with at least one child, useful for tree analysis.
+- **Balance Factor and Perfection**: Determine the balance of a tree and check if it is perfect, which is crucial for certain applications like AVL trees.
+- **Sibling and Uncle Identification**: Functions to find siblings and uncles of a node, aiding in understanding tree relationships.
 
-## Getting Started
+## File Descriptions
 
-1. Clone this repository to your local machine:
+- `binary_trees.h`: Header file with all function prototypes and the basic structure of a binary tree.
+- `binary_tree_print.c`: Utility function to print a binary tree visually.
+- **Files 0 to 18**: Each contains a specific function implementation, ranging from basic operations like node creation (`0-binary_tree_node.c`) to more advanced ones like checking if a tree is perfect (`16-binary_tree_is_perfect.c`).
 
-   ```bash
-   git clone https://github.com/Miniknacky/binary-tree-project.git
-   cd binary-tree-project
+## Compilation and Usage
 
-## Compiling and Running the Project
+Compile the project using gcc with flags `-Wall -Wextra -Werror -pedantic`.
+Example: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 0-binary_tree_node.c -o 0-node`
+Run the executable generated (e.g., `./0-node`) to see the output of the specific functionality.
 
-Compile the project using a C compiler (e.g., gcc):
+## Contributions and License
 
-```bash
-gcc -o main main.c binary_tree.c
-```
-
-## Usage
-
-You can utilize this project for various purposes, such as building and analyzing binary tree data structures. It provides a user-friendly interface to perform a wide range of operations, making it an ideal tool for developers working with binary trees in C.
+This project is part of the Holberton School curriculum.
+Contributions to this project are welcome. Please ensure your code adheres to the project's coding standards and submit a pull request for review.
+This project is licensed under the MIT License.
 
 ## Authors
 
-- BINET Nolan (https://github.com/Jeykop22)
-- HUYBRECHTS Jonathan (https://github.com/Miniknacky)
-
-
+- BINET Nolan ([GitHub](https://github.com/Jeykop22))
+- HUYBRECHTS Jonathan ([GitHub](https://github.com/Miniknacky))
